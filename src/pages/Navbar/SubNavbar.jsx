@@ -83,10 +83,10 @@ const SubNavbar = () => {
             </Swiper>
           </div>
           <div className="flex items-center justify-center my-[10px]">
-            <a href="/" className="mx-6 my-[10px]">
+            <a href="/" className="mx-2 my-[10px]">
               <House size={20} />
             </a>
-            <a href="/" className="mx-6 my-[10px]">
+            <a href="/" className="mx-2 my-[10px]">
               <Download size={20} />
             </a>
 
