@@ -1,0 +1,65 @@
+.blackbg{
+    background-color: $blackbg;
+}
+.lightbg{
+    background-color: $lightbg;
+}
+.whitetext{
+color: $white;
+}
+.text{
+    color: $text;
+}
+.flexauto{
+    flex: 0 0 auto;
+}
+.homecard{
+    .card-items{
+        .card{
+            padding: 10px;
+            // width: 101px;
+            flex: 0 0 auto;
+            min-width: 110px;
+            min-height: 100px;
+        }
+    }
+}
+.topgame{
+    .swiper-nav{
+        button{
+            --width:28px;
+            width: var(--width);
+            height: var(--width);
+            background-color: $lightbg;
+            border-radius: 2px;
+        }
+    }
+}
+
+.marqueSection{
+    .card2{
+      
+        .swiper-slide{
+            height: max-content !important;
+            margin-bottom: 0 !important;
+        }
+    }
+    .swiper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+.testimonial{
+    .cottnation{
+        svg{
+            --width:32px;
+            width: var(--width);
+            height: var(--width);
+            @include mmd{
+                --width:20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,252 @@
+.trend {
+    .trend-title {
+        @include font-67;
+    }
+    &-items {
+        column-count: 3;
+        column-gap: 24px;
+    }
+    &-card {
+        backdrop-filter: blur(24px);
+        .text-body {
+            min-height: 193px;
+            max-height: 120px;
+            h6 {
+                @include font-32;
+            }
+        }
+        .btns {
+            &:hover {
+                & span {
+                    color: $black;
+                }
+                & .arraw-btn {
+                    transform: rotate(45deg);
+                }
+            }
+            .cardbtn {
+                border-radius: 28.493px;
+                border: 0.77px solid rgba(255, 255, 255, 0.50);
+                background: rgba(255, 255, 255, 0.20);
+                backdrop-filter: blur(38px);
+                padding: 13px 0;
+                @include transition;
+            }
+            .arraw-btn {
+                --width: 48px;
+                width: var(--width);
+                height: var(--width);
+                border-radius: 50%;
+                flex: 0 0 auto;
+                transform: rotate(0deg);
+                @include transition;
+                svg {
+                    height: 25px;
+                    width: 30px;
+                    color: $white;
+                }
+            }
+        }
+        .smallshap {
+            .shap1 {
+                width: 360px;
+                height: 306px;
+            }
+            .img1 {
+                width: 206px;
+                height: 208px;
+            }
+        }
+        .bigshap {
+            .shap2 {
+                width: 433px;
+                height: 576px;
+            }
+            .img2 {
+                min-width: 270px;
+                height: 220px;
+            }
+        }
+    }
+}
+
+
+.ttoken {
+    &-text {
+        p {
+            padding-right: 70px;
+            @include xxl {
+                padding-right: 25px;
+            }
+            @include xl {
+                padding-right: 25px;
+            }
+            @include lg {
+                padding-right: 0px;
+            }
+            @include mmd {
+                padding-right: 0px;
+            }
+        }
+        h2 {
+            @include font-88;
+            @include lg {
+                font-size: 55px;
+            }
+        }
+    }
+    & .btn {
+        --padding-x: 89px;
+    }
+    &-img {
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 44;
+            right: 25%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(212deg, #62EAF9 19.02%, #D92BF5 72.97%);
+            filter: blur(100px);
+        }
+        @include lg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.explore {
+    h2 {
+        @include font-72;
+        @include sm {
+            font-size: 28px;
+        }
+    }
+    &-content {
+        border-radius: 29px;
+        border: 1.5px solid rgba(255, 255, 255, 0.30);
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(21px);
+        @include mmd {
+            border-radius: 15px;
+        }
+    }
+    .shap {
+        width: 450px;
+        height: 525px;
+        background: linear-gradient(94deg, rgba(217, 43, 245, 0.60) 23.97%, rgba(98, 234, 249, 0.60) 90.57%);
+        filter: blur(180px);
+        @include sm {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+.roadmap {
+    background-image: url("../img/roadmap-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding-top: 70px;
+    padding-bottom: 180px;
+    @include xl {
+        padding-bottom: 110px;
+    }
+    @include xl {
+        padding-bottom: 110px;
+    }
+    @include lg {
+        padding-bottom: 110px;
+    }
+    @include md {
+        padding-bottom: 80px;
+        padding-top: 60px;
+    }
+    @include sm {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    &-heading {
+        h3 {
+            @include font-80;
+            @include sm {
+                font-size: 30px;
+            }
+        }
+    }
+    .slider-area {
+        .slider-card {
+            // border-radius: 29px;
+            // border: 1.5px solid #B31EE2;
+            // background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(21px);
+            height: 100%;
+            background-image: url("../img/roadmap-card-bg.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            @include mmd {
+                margin: 0 20px;
+            }
+            @include sm {
+                margin: 0 30px;
+            }
+            .slider-body {
+                min-height: 350px;
+                @include lg {
+                    min-height: 285px;
+                }
+                @include mmd {
+                    min-height: 260px;
+                }
+                .cricle-shap {
+                    background: linear-gradient(94deg, rgba(217, 43, 245, 0.60) 23.97%, rgba(98, 234, 249, 0.60) 90.57%);
+                    filter: blur(60px);
+                }
+            }
+        }
+        .swiper-nav {
+            button {
+                --width: 56px;
+                border-radius: 33px;
+                border: 1.167px solid rgba(255, 255, 255, 0.30);
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(25px);
+                width: var(--width);
+                height: var(--width);
+                cursor: pointer;
+                @include sm {
+                    --width: 45px;
+                }
+                &:hover {
+                    background: $white;
+                    svg {
+                        color: $black;
+                    }
+                }
+                svg {
+                    --width: 28px;
+                    width: var(--width);
+                    height: var(--width);
+                    flex: 0 0 auto;
+                    @include sm {
+                        --width: 20px;
+                    }
+                }
+            }
+            .btn2 {
+                background: $white;
+                svg {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
