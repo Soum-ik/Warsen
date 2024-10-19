@@ -132,7 +132,7 @@ export default function ToGame() {
                     >
                         {slidercard.map((item, idx) => (
                             <SwiperSlide key={idx}>
-                                <div className="     relative z-[1] h-[153px] w-full ">
+                                <div className="relative z-[1] h-[153px] w-full ">
                                     <img className=' h-full w-full rounded-lg' src={item.image} alt="" />
                                     <p className='whitetext p-[6px] bg-[#3F4142] dark:bg-[#F2F2F2]  dark:text-black rounded-b-lg w-full  absolute z-10 bottom-0 left-0'>{item.title}</p>
                                 </div>

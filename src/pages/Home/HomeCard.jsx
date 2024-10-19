@@ -42,7 +42,7 @@ export default function HomeCard() {
       <div className="container mx-auto">
         <div className="card-items">
 
-          <Swiper 
+          <Swiper
             breakpoints={{
               0: {
                 slidesPerView: 5,
@@ -69,7 +69,7 @@ export default function HomeCard() {
                 spaceBetween: 20,
               },
               1500: {
-                slidesPerView: 16,
+                slidesPerView: 10,
                 spaceBetween: 10,
               }
             }}
@@ -82,19 +82,20 @@ export default function HomeCard() {
             {homecard.map((item, idx) => (
               <SwiperSlide
                 href="#"
-                className="card inline-flex flex-col bg-[#22252A] dark:bg-[#F2F2F2] w-[100px] h-[120px] lg:w-[120px] lg:h-[120px] px-4 pb-2 rounded-lg lg:rounded-[15px]  "
+                className="flex-col bg-[#22252A] dark:bg-[#F2F2F2] w-[150px] h-[180px] lg:w-[240px] lg:h-[240px] card px-4 pb-2 rounded-lg lg:rounded-[15px]"
                 key={idx}
               >
                 <div className="flex flex-col justify-center items-center">
-                  <span className="icon-container dark:text-black w-10 h-10 lg:w-10 lg:h-10 flex justify-center items-center">
+                  <span className="icon-container dark:text-black w-12 h-12 lg:w-16 lg:h-16 flex justify-center items-center">
                     {item.image}
                   </span>
-                  <span className="text-white dark:text-black block font-medium mt-2 md:mt-[10px]">
+                  <span className="text-white dark:text-black w-[150px] text-center lg:w-[240px] block font-medium mt-2 md:mt-[10px]">
                     {item.title}
                   </span>
                 </div>
               </SwiperSlide>
             ))}
+
           </Swiper>
         </div>
       </div>

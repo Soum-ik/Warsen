@@ -74,7 +74,7 @@ const SubNavbar = () => {
               loop={true}
             >
               {links.map((link, index) => (
-                <SwiperSlide key={index} className=" max-w-[60px] my-[10px] mt-[25px]">
+                <SwiperSlide key={index} className=" max-w-max my-[10px] mt-[14px]">
                   <a href={link.href} className="py-2 px-3 md:p-0 text-white dark:text-black/70 rounded">
                     {link.label}
                   </a>
